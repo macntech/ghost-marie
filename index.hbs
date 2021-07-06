@@ -1,43 +1,47 @@
 {{!< default}}
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
+<!--
+*   MARIE Hugo Theme
+*   https://coding.observer
+*   Thank you for using this theme!
+*   Follow me @johannesgeisslinger
+*-->
 
-{{!-- The main content area --}}
-<main id="site-main">
-    <div class="container">
+<div class="col-md-9 col-md-offset-3">
 
-        <div class="p-5">
+        <div class="tiles">
             {{!-- Iterate through each posts --}}
             {{#foreach posts}}
 
-            <article class="{{post_class}}" style="margin-bottom: 20px;">
-                <div class="card-body">
-
-                    {{!-- Display primary tag of the post if exists--}}
-                    {{#if primary_tag}}
-                    <a href="{{primary_tag.url}}" class="badge badge-success">
-                        {{primary_tag.name}}
-                    </a>
-                    {{/if}}
-
-                    <a class="text-dark" href="{{url}}">
-                        {{!-- Post title --}}
-                        <h2>{{title}}</h2>
-                    </a>
-
-                    {{!-- Displays post excerpt. Sets to display max 170 chars if not set --}}
-                    <p>{{excerpt characters="170"}}</p>
-
-                    <div>
-                        <span class="reading-time">{{reading_time}}</span>
-                        <span> - Published: {{date published_at timeago="true"}}</span>
+            <article class="post">
+                
+      
+                    <div class="post-header">
+                        <h2 class="post-title">
+                            <a href="{{url}}">{{title}} </a>
+                        </h2>
+                        {{> "meta"}}
                     </div>
 
-                </div>{{!--/.post-card-content--}}
+                    {{#if feature_image}}
+                     <figure class="article-image">
+                        <img src="{{img_url feature_image}}" alt="{{title}}"/>
+                    </figure>
+                    {{/if}}
+
+                    {{!-- Displays post excerpt. Sets to display max 170 chars if not set --}}
+                    <div class="post-excerpt resizable">
+                        <p>{{excerpt characters="170"}}</p>
+                    </div>
+                   
             </article>
 
             {{/foreach}}
-        </div>
 
-    </div>
-</main>
+            {{pagination}}
+
+        </div>
+</div>
+</div>
+</div>

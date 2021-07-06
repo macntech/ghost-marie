@@ -1,0 +1,28 @@
+<div class="pagination-wrap">
+            <ul>
+                <li>
+                    {{#if prev}}
+                        <a class="prev page-numbers" href="{{page_url prev}}">
+                    {{else}}
+                        <a class="prev page-numbers" href="#"></a>
+                    {{/if}}
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+                {{#foreach pages}}
+                <li>
+                    <a class="page-numbers" href="{{page_url}}">{{page}}</a>
+                </li>
+                {{/foreach}}
+
+                <li>
+                    {{#if next}}
+                        <a class="next page-numbers" href="{{page_url next}}">
+                    {{else}}
+                        <a class="next page-numbers" href="#"></a>
+                    {{/if}}     
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>

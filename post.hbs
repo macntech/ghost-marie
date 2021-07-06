@@ -5,46 +5,58 @@ into the {body} of the default.hbs template --}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-<main id="site-main" class="container">
-    <div class="p-5 m-5">
+<!-- Bootstrap responsive Container and preparation for barba -->
+<div class="col-md-9 col-md-offset-3 side-collapse-container" data-barba="container">
+    <div class="tiles">
 
-        <article class="{{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-
-            <h1 class="text-center">{{title}}</h1>
-
-            {{!-- Display author, date and tags --}}
-            <div class="text-center text-upper m-5">
-                <a class="text-danger" href="{{primary_author.url}}">
-                    {{primary_author.name}}
-                </a>
-
-                <time datetime="{{date format="YYYY-MM-DD"}}">
-                    - {{date format="D MMMM YYYY"}}
-                </time>
-
-                {{!-- Displays upto three tags separated by comma --}}
-                <p class="m-3">
-                    {{tags prefix="Tagged in: " separator="&comma; " limit="3"}}
-                </p>
+        <article class="post" itemtype="http://schema.org/BlogPosting">
+            
+            <div class="post-header">
+                
+                <div class="post-title">{{title}}</div>
+                {{> "meta"}}
+            
+            </div>
+            
+            <div class="post-content">
+                
+                {{#if feature_image}}
+                <figure>
+                    <img src="{{img_url feature_image}}" alt="{{title}}" />
+                </figure>
+                {{/if}}
+                
+                <!-- Main Post Content -->
+                <div class="post-content resizable justify">
+                    <p>
+                        {{content}} 
+                    </p>
+                    
+                    <div class="post-footer">
+                        
+                    
+                        <p class="m-3">
+                            {{tags prefix="Tagged in: " separator="&comma; " limit="3"}}
+                        </p>
+                        
+                    </div>
+                    <!-- Post Footer End -->            
+                </div>
+                <!-- Main Post Content End -->   
             </div>
 
-            {{!-- Displays the featured image if exists --}}
-            {{#if feature_image}}
-            <figure>
-                <img src="{{img_url feature_image}}" alt="{{title}}" class="img-fluid" />
-            </figure>
-            {{/if}}
+        {{> "comments"}}
 
-            <section class="mt-5">
-                <div class="post-content">
-                    {{!-- Display the post content --}}
-                    {{content}}
-                </div>
-            </section>
 
         </article>
+        <!-- End Single Post-->
 
     </div>
-</main>
+</div>
+<!-- Container End -->
+</div>
+</div>
+</div>
+<!-- End Wrapper Site -->
 
 {{/post}}
