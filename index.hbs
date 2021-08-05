@@ -10,38 +10,19 @@ into the {body} of the default.hbs template --}}
 
 <div class="col-md-9 col-md-offset-3">
 
-        <div class="tiles">
+        
+            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "percentPosition": "true" }'>
             {{!-- Iterate through each posts --}}
+            <div class="grid-sizer"></div>
             {{#foreach posts}}
-
-            <article class="post">
-                
-      
-                    <div class="post-header">
-                        <h2 class="post-title">
-                            <a href="{{url}}">{{title}} </a>
-                        </h2>
-                        {{> "meta"}}
-                    </div>
-
-                    {{#if feature_image}}
-                     <figure class="article-image">
-                        <img src="{{img_url feature_image}}" alt="{{title}}"/>
-                    </figure>
-                    {{/if}}
-
-                    {{!-- Displays post excerpt. Sets to display max 170 chars if not set --}}
-                    <div class="post-excerpt resizable">
-                        <p>{{excerpt characters="170"}}</p>
-                    </div>
-                   
-            </article>
+                {{!-- Get post card partial --}}
+                {{> post-card}}
 
             {{/foreach}}
+            </div>
 
             {{pagination}}
-
-        </div>
+        
 </div>
 </div>
 </div>

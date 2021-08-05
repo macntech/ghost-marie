@@ -1,6 +1,6 @@
 <div class="pagination-wrap">
-            <ul>
-                <li>
+    <ul>
+        <li>
                     {{#if prev}}
                         <a class="prev page-numbers" href="{{page_url prev}}">
                     {{else}}
@@ -8,14 +8,14 @@
                     {{/if}}
                         <i class="fas fa-chevron-left"></i>
                     </a>
-                </li>
-                {{#foreach pages}}
+        </li>
+        {{#foreach pages}}
                 <li>
                     <a class="page-numbers" href="{{page_url}}">{{page}}</a>
                 </li>
-                {{/foreach}}
+        {{/foreach}}
 
-                <li>
+        <li>
                     {{#if next}}
                         <a class="next page-numbers" href="{{page_url next}}">
                     {{else}}
@@ -23,6 +23,6 @@
                     {{/if}}     
                         <i class="fas fa-chevron-right"></i>
                     </a>
-                </li>
-            </ul>
-        </div>
+        </li>
+    </ul>
+</div>

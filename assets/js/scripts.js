@@ -15,7 +15,6 @@
 
 ============================== START Javascript ========================================================================== */
 
-
 // theme switch button
 document.querySelector('.theme-switch').addEventListener('click', () => {
 

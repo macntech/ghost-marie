@@ -10701,27 +10701,9 @@ i {
 }
 
 /* ==================== POST STYLES  ==================== */
-/*
-//Auto numbering
-body {counter-reset: h1}
-h1 {counter-reset: h2}
-h2 {counter-reset: h3}
-h3 {counter-reset: h4}
-h4 {counter-reset: h5}
-
-.autonumbering h1:before {counter-increment: h1; content: counter(h1) ". "}
-.autonumbering h2:before {counter-increment: h2; content: counter(h1) "." counter(h2) ". "}
-.autonumbering h3:before {counter-increment: h3; content: counter(h1) "." counter(h2) "." counter(h3) ". "}
-.autonumbering h4:before {counter-increment: h4; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "}
-
-.autonumbering .post-toc ul { counter-reset: item }
-.autonumbering .post-toc li a:before { content: counters(item, ".") ". "; counter-increment: item }
-
-//*/
 .post-header {
   background-color: #A9A9A9;
   padding: 20px 30px 10px;
-  margin-bottom: 7px;
 }
 
 .post-title {
@@ -10745,7 +10727,7 @@ h4 {counter-reset: h5}
 }
 
 .post-excerpt {
-  padding: 20px 30px 20px;
+  padding: 10px 30px 10px;
   background-color: var(--color-secondary);
 }
 
@@ -11190,10 +11172,10 @@ body {
 }
 
 .post-title {
-  line-height: 2.5rem;
+  line-height: 2.2rem;
   color: var(--color-title);
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
 }
 
@@ -11316,13 +11298,22 @@ body {
   color: #359377;
 }
 
-.tiles {
-  padding-left: 80px;
-  padding-right: 50px;
-}
-
 .footer-inner {
   margin-top: 30px;
+}
+
+.grid-sizer {
+  width: 50%;
+}
+
+.grid-item {
+  width: 49%;
+  margin-bottom: 10px;
+  margin-right: 1%;
+}
+
+.article-image {
+  margin: 0 !important;
 }
 
 /* ==================== MEDIA STYLES  ==================== */
@@ -11384,11 +11375,6 @@ body {
     color: #ffffff;
   }
 
-  .tiles {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .socials a {
     margin-right: 10px;
   }
@@ -11400,6 +11386,15 @@ body {
   .hide-menu.active {
     visibility: visible;
     opacity: 1;
+  }
+
+  .grid-sizer {
+    width: 30%;
+  }
+
+  .grid-item {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -11413,11 +11408,6 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
-  .tiles {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .mobile {
     margin-bottom: 50px;
   }
