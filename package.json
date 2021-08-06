@@ -1,7 +1,7 @@
 {
   "name": "marie",
-  "description": "A custom Ghost theme",
-  "version": "0.0.1",
+  "description": "Marie is a clean blog theme for Ghost built by Johannes Geisslinger",
+  "version": "1.0.0",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v3"
@@ -9,8 +9,8 @@
   "license": "gpl-3.0",
   "author": {
     "name": "Johannes Geisslinger",
-    "email": "admin@test.com",
-    "url": "https://test.com"
+    "email": "jo@macn.tech",
+    "url": "https://macn.tech"
   },
   "gpm": {
     "type": "theme",
@@ -21,10 +21,12 @@
     ]
   },
   "keywords": [
+    "marie",
     "ghost",
-    "theme",
-    "ghost-theme",
-    "Geekinsta"
+    "blog",
+    "bootstrap",
+    "responsive",
+    "mansory"
   ],
   "config": {
     "posts_per_page": 4,

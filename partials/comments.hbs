@@ -1,4 +1,8 @@
-<!-- Import script from Utterances page and feed parameter from config.toml-->
+{{!--
+*   ENABLE this section if you want to use Utterances Comments
+*   Change Config Settings to your own repo!
+*   
+
 <div class="post-comments">
     <h2 class="title">Comments</h2>
     <div class="comments-inner">
@@ -10,5 +14,25 @@
             crossorigin="anonymous"
             async>
         </script>
+    </div>
+</div>
+
+--}}
+
+
+
+<div class="post-comments">
+    <h2 class="title">Comments</h2>
+    <div class="comments-inner">
+        
+        <div id="cusdis_thread"
+            data-host="https://mct-comment.vercel.app"
+            data-app-id="1510d665-6e01-4cc8-942e-7eede6999652"
+            data-page-id="{{id}}"
+            data-page-url="{{url}}"
+            data-page-title="{{title}}"
+            data-theme="auto"
+        ></div>
+        <script async defer src="https://mct-comment.vercel.app/js/cusdis.es.js"></script>
     </div>
 </div>

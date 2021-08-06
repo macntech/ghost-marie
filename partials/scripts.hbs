@@ -1,0 +1,45 @@
+<!-- jQuery Slim first, then Popper.js, then Bootstrap JS -->
+    <script src="{{asset "js/masonry.pkgd.min.js"}}"></script>
+    <script src="{{asset "js/jquery.min.js"}}"></script>
+    <script src="{{asset "js/popper.min.js"}}"></script>
+    <script src="{{asset "js/bootstrap.min.js"}}"></script>
+    <script src="{{asset "js/scripts.js"}}"></script>
+    <script src="{{asset "js/prism.js"}}"></script>
+
+<!-- Cookie Banner Script and Configuration -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#A9A9A9",
+                "text": "#ffffff" },
+            "button": {
+                "background": "#000000",
+                "text": "#ffffff" }
+        },
+        "showLink": false,
+        "theme": "edgeless",
+        "position": "bottom-left",
+        "content": {
+            "message": "We use cookies to ensure you have a great experience.",
+            "dismiss": "Accept" }
+        });
+    </script>
+
+
+<!-- Matomo Analytics - if enabled you need to set the parameters in the code injection -->
+    
+        <script type="text/javascript">
+        var _paq = window._paq || [];
+
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', s]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>

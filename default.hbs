@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="{{asset "css/marie.css"}}">
     <link rel="stylesheet" href="{{asset "css/prism.css"}}">
     <link rel="stylesheet" href="{{asset "css/all.css"}}">
+     <link rel="stylesheet" href="{{asset "css/custom.css"}}">
+     <!-- Dynamic Cookie Banner Styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 
@@ -25,17 +28,11 @@
     </div>
 
     {{> "footer"}}
-    {{!-- Dynamic footer content from code injection etc --}}
+    {{!-- Dynamic footer content from code injection etc before scripts to use injected code--}}
     {{ghost_foot}}
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery Slim first, then Popper.js, then Bootstrap JS -->
-    <script src="{{asset "js/masonry.pkgd.min.js"}}"></script>
-    <script src="{{asset "js/jquery.min.js"}}"></script>
-    <script src="{{asset "js/popper.min.js"}}"></script>
-    <script src="{{asset "js/bootstrap.min.js"}}"></script>
-    <script src="{{asset "js/scripts.js"}}"></script>
-    <script src="{{asset "js/prism.js"}}"></script>
+    <!-- JavaScript -->
+    {{> "scripts"}}
+    
 </body>
-
 </html>
