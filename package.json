@@ -1,7 +1,7 @@
 {
   "name": "marie",
   "description": "Marie is a clean blog theme for Ghost built by Johannes Geisslinger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v3"
