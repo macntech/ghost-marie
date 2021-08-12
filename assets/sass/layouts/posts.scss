@@ -81,7 +81,26 @@
     font-size: $font-size-3;
     padding-bottom: 10px;
   }
+
+  .post-image{
+    margin: 0 !important;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
   
+  .post-image-container{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
   @media screen and (max-width: 991px) {
 
     .post-toc {

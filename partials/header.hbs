@@ -32,7 +32,7 @@
                         {{"navigation"}}
                         <!-- End Navigation -->
 
-
+                        <!-- Font Controller -->
                         <div class="fontcontroller">
                             <p>
                                 <a class="increase">A+</a>
@@ -41,18 +41,24 @@
                             </p>
                         </div>    
 
+                        <!-- Theme Mode Switcher-->
                         <button type="button" class="btn theme-switch">
                             <i id="switch" class="fas fa-adjust"></i>
                         </button>
 
-
-                        
                         <div class="kofi">
                             <a href="https://ko-fi.com/johannes" target="_blank">
-                                <button type="button" class="btn btn-light">Donate a <i class="fas fa-coffee"></i></button>
+                                <button type="button" class="btn btn-light">Spende einen <i class="fas fa-coffee"></i></button>
                             </a>                  
                         </div>
-                        
+
+                        <!-- Enable Table of Content in case of Post Page-->
+                        {{#post}}
+                        <hr >
+                        <div class="toc"></div>
+                        {{/post}}
+                         <!-- End TOC -->
+
             </div>
         </div>
 

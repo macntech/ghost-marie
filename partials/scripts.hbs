@@ -6,6 +6,20 @@
     <script src="{{asset "js/scripts.js"}}"></script>
     <script src="{{asset "js/prism.js"}}"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.post-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
+
 <!-- Cookie Banner Script and Configuration -->
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
@@ -23,8 +37,8 @@
         "theme": "edgeless",
         "position": "bottom-left",
         "content": {
-            "message": "We use cookies to ensure you have a great experience.",
-            "dismiss": "Accept" }
+            "message": "Diese Seite benutzt Cookies um diverse Funktionen sicherzustellen.",
+            "dismiss": "Akzeptieren" }
         });
     </script>
 

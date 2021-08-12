@@ -11,8 +11,9 @@ MARIE includes many features build in the theme and ready for use. Some highligh
 - [x] Responsive Bootstrap Design
 - [x] Masonry Layout for front page
 - [x] Dark Mode
+- [x] TOC Bot 
 - [x] Local Font Awesome Icons
-- [x] Utteranc.es and Cusdis Comments
+- [x] Utteranoffc.es and Cusdis Comments
 - [x] Code Highlighter and Clipboard with PRISM JS
 - [x] Ko-Fi Implementation
 - [x] Barrier-free reading by adjusting the text size
@@ -75,14 +76,18 @@ If you need special scripts for your personal usage you can inject your JS in th
 
 
 #### :cookie: Cookies 
-If you use cookies in your theme (like with Matomo, theme switcher etc.) you may want to inform your visitors about this. MARIE uses the famous cookieconsent JS plugin to manage your cookie banner. The banner is enabled by default. 
+If you use cookies in your theme (like with Matomo, theme switcher etc.) you may want to inform your visitors about this. MARIE uses the famous cookieconsent javascript plugin to manage your cookie banner. The banner is enabled by default. You can edit the details of the banner by editing the script file: 
+
+:arrow_right: partials/scripts.hbs 
 
 
 ### :balloon: Specials
  
 
 #### :crystal_ball: Comments
-You can activate a comment section based on Utterances. Follow their how-to (https://utteranc.es) to setup your GitHub issues for collecting your comments. Afterwards configure your site as following: 
+You can activate a comment section based on Utterances or Cusdis. For Utterances follow their how-to (https://utteranc.es) to setup your GitHub issues for collecting your comments. For Cusdis (enabled by default) you need to host your own comment system and connect with your details. Afterwards configure the plugin under 
+
+:arrow_right: partials/comments.hbs
 
 
 #### :bar_chart: Matomo Tracking
@@ -101,7 +106,7 @@ Finally some credits for the good work on the resources used in this theme:
 
 - [Font Awesome](https://fontawesome.com/)
 - [Bootstrap](https://bootstrap.com/)
-- [Prism.JS]()
+- [Prism.JS](https://prismjs.com)
 - [cookieconsent](https://github.com/osano/cookieconsent)
 
 ## Sponsor
@@ -110,7 +115,7 @@ If you like the theme I would be very happy to reveive your feedback or a coffee
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I12FSW2)
 
-Still need a server to spin up your own ghost installation? Check out my refer link for your Hetzner cloud server
+Still need a server to spin up your own ghost installation? Check out my refer link for your Hetzner cloud server and get 20 EUR on top:
 [Click Here](https://hetzner.cloud/?ref=ir0WnxeEHrmU)
 
 Follow me on Twitter for any news

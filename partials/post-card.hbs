@@ -8,9 +8,11 @@
         </div>
 
         {{#if feature_image}}
-            <figure class="article-image">
-                 <img src="{{img_url feature_image}}" alt="{{title}}"/>
+         <div class="article-image-box">
+           <figure>
+                 <img class="article-image" src="{{img_url feature_image}}" alt="{{title}}"/>
             </figure>
+            </div> 
         {{/if}}
 
         {{!-- Displays post excerpt. Sets to display max 170 chars if not set --}}

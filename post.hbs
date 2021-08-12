@@ -21,9 +21,11 @@ into the {body} of the default.hbs template --}}
             <div class="post-content">
                 
                 {{#if feature_image}}
-                <figure>
-                    <img src="{{img_url feature_image}}" alt="{{title}}" />
-                </figure>
+                <div class="post-image-container">
+                    <figure>
+                        <img class="post-image" src="{{img_url feature_image}}" alt="{{title}}" />
+                    </figure>
+                </div>
                 {{/if}}
                 
                 <!-- Main Post Content -->
