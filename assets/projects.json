@@ -1,0 +1,16 @@
+{
+    "list": [
+      {
+        "title": "TakeNote",
+        "path": "https://takenote.dev",
+        "source": "https://github.com/taniarascia/takenote",
+        "desc": "A free, open source notes app for the web."
+      },
+      {
+        "title": "TakeTwice",
+        "path": "https://takenote.dev",
+        "source": "https://github.com/taniarascia/takenote",
+        "desc": "A free, open source notes app for the web."
+      }
+    ]
+  }

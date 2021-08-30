@@ -11,7 +11,12 @@
 
       <div class="menu-toggler"><i class="fas fa-bars"></i></div>
         <div class="logo">
-                        <img src="{{@site.logo}}" alt="{{@site.title}}" width="200">
+                        <!-- Check if Logo was uploaded -->
+                        {{#if @site.logo}}
+                            <img src="{{@site.logo}}" alt="{{@site.title}}" width="200">
+                        {{else}}
+                            <span>{{@site.title}}</span>
+                        {{/if}}
         </div>
     </div>
 </div>
@@ -23,8 +28,13 @@
         <div class="col-md-3">
             <div class="header">                
                         <!-- Logo - Disable for mobile view-->
-                        <div class="logo logo-mobile">                            
-                                     <img src="{{@site.logo}}" alt="{{@site.title}}">
+                        <div class="logo logo-mobile">                                               
+                             <!-- Check if Logo was uploaded -->
+                            {{#if @site.logo}}
+                                <img src="{{@site.logo}}" alt="{{@site.title}}" width="200">
+                            {{else}}
+                                <span>{{@site.title}}</span>
+                            {{/if}}
                         </div>
                         <!-- End Logo -->
                   

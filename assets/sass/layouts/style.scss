@@ -5,7 +5,7 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-  font-family: $font-standard;
+  font-family: $font-headlines;
   color: var(--color-headline);
   font-weight: 400;
   line-height: 110%;
@@ -168,7 +168,7 @@ body {
 
 .footer-inner{
   margin-top:30px;  
-
+  text-align: center;
 }
 
 .grid-sizer{ 

@@ -1,9 +1,25 @@
-<div class="main-menu">
-                            <nav>                  
-                                <ul class="menu-list">
-                                    {{#foreach navigation}}
-                                    <li><a href="{{url absolute="true"}}">{{label}}</a></li>
-                                     {{/foreach}}
-                                </ul>
-                            </nav>
-</div>
+{{#if isSecondary}}
+    
+         <!-- Styling of Secondary Navigation = Social Links -->
+        {{#foreach navigation}}
+            <!-- Parse AND for last item on the list -->
+            {{#if @last}}
+                and <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a>
+            {{else}}
+            <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a> 
+            {{/if}}  
+        {{/foreach}}
+
+{{else}}
+   
+    <!-- Styling of Main Navigation -->
+    <div class="main-menu">
+         <nav>                  
+            <ul class="menu-list">
+                    {{#foreach navigation}}
+                        <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+                    {{/foreach}}
+             </ul>
+        </nav>
+    </div>
+{{/if}}

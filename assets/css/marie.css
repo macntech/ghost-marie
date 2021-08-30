@@ -10706,6 +10706,11 @@ i {
   padding: 20px 30px 10px;
 }
 
+.post-header-icon {
+  font-size: 2rem;
+  color: var(--color-font);
+}
+
 .post-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -11182,7 +11187,7 @@ h6, .h6 {
 }
 
 body {
-  font-family: "Roboto Regular";
+  font-family: "JetBrains Mono";
   font-size: 1rem;
   color: var(--color-font);
   line-height: 1.5rem;
@@ -11296,7 +11301,7 @@ body {
   border-bottom: 1px solid #e2e2e2;
   margin-top: 60px;
   padding-bottom: 15px;
-  font-family: "Roboto Regular";
+  font-family: "JetBrains Mono";
 }
 
 .pagination-wrap ul {
@@ -11324,6 +11329,7 @@ body {
 
 .footer-inner {
   margin-top: 30px;
+  text-align: center;
 }
 
 .grid-sizer {

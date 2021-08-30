@@ -1,19 +1,26 @@
 <article class="grid-item">
 
          <div class="post-header"> 
+
+                 <div class="post-header-icon">
+                        {{#has tag="javascript"}}
+                                <i class="fab fa-js"></i>
+                        {{/has}}
+                </div>
+
                 <h2 class="post-title">
                         <a href="{{url}}">{{title}} </a>
                 </h2>
                 {{> "meta"}}
         </div>
-
+        {{!-- 
         {{#if feature_image}}
          <div class="article-image-box">
-           <figure>
+          {{!--  <figure>
                  <img class="article-image" src="{{img_url feature_image}}" alt="{{title}}"/>
             </figure>
             </div> 
-        {{/if}}
+        {{/if}}--}}
 
         {{!-- Displays post excerpt. Sets to display max 170 chars if not set --}}
         <div class="post-excerpt resizable">
