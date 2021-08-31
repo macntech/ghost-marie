@@ -9,13 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
     <script>
         tocbot.init({
-            // Where to render the table of contents.
             tocSelector: '.toc',
-            // Where to grab the headings to build the table of contents.
             contentSelector: '.post-content',
-            // Which headings to grab inside of the contentSelector element.
             headingSelector: 'h1, h2, h3',
-            // For headings inside relative or absolute positioned containers within content.
             hasInnerContainers: true,
         });
     </script>
@@ -46,14 +42,22 @@
 <!-- Matomo Analytics - if enabled you need to set the parameters in the code injection -->
     
         <script type="text/javascript">
-        var _paq = window._paq || [];
-
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', s]);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        if(matomo){
+            var _paq = window._paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u = matomoserver;
+                var s = matomoid;
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', s]);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
             })();
+        }
         </script>
+
+<!-- Set Config Variables based on Code Injection -->
+<script>
+    document.body.setAttribute('data-theme', theme);
+</script>

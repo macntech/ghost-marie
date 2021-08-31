@@ -1,5 +1,7 @@
-//Color Sets
-//$color-text: {{ .Site.Params.Colors.Text | default "#696969" }};
+// MARIE SASS VARIABLES
+
+//Color Sets for light and dark theme
+// Use specific color in SASS like color: var(--color-headline);
 
 $light-color-bg: #ffffff;
 $light-color-primary:#A9A9A9;

@@ -56,11 +56,14 @@
                             <i id="switch" class="fas fa-adjust"></i>
                         </button>
 
-                        <div class="kofi">
-                            <a href="https://ko-fi.com/johannes" target="_blank">
-                                <button type="button" class="btn btn-light">Spende einen <i class="fas fa-coffee"></i></button>
-                            </a>                  
-                        </div>
+                        <!-- Kofi Button if enabled by Ghost site injection -->
+                        <div class="kofi" id="kofi"></div>
+                        <script>
+                            if(kofi) {
+                                let content ='<a href="'+ kofiurl +'" target="_blank"><button type="button" class="btn btn-dark">Donate a <i class="fas fa-coffee"></i></button></a>';
+                                document.getElementById('kofi').insertAdjacentHTML('afterbegin', content); 
+                            }                                           
+                        </script>
 
                         <!-- Enable Table of Content in case of Post Page-->
                         {{#post}}

@@ -13,7 +13,7 @@ into the {body} of the default.hbs template --}}
             
             <div class="post-header">
                 
-                <div class="post-title">{{title}}</div>
+                <div class="post-title"><h1>{{title}}</h1></div>
                 {{> "meta"}}
             
             </div>
@@ -36,9 +36,10 @@ into the {body} of the default.hbs template --}}
                     
                     <div class="post-footer">
                         
-                    
+                        <hr>
                         <p class="m-3">
-                            {{tags prefix="Tagged in: " separator="&comma; " limit="3"}}
+                            {{tags prefix="Tags: " separator="&comma; " limit="3"}}<br />
+                            {{authors separator=" | " prefix="Author:"}}
                         </p>
                         
                     </div>
