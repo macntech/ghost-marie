@@ -2,12 +2,14 @@
     
          <!-- Styling of Secondary Navigation = Social Links -->
         {{#foreach navigation}}
-            <!-- Parse AND for last item on the list -->
+            <!-- Parse AND for last item on the list 
             {{#if @last}}
                 and <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a>
             {{else}}
             <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a> 
-            {{/if}}  
+            {{/if}}  -->
+            <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a> 
+
         {{/foreach}}
 
 {{else}}
