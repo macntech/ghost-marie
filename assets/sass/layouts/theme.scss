@@ -11,6 +11,7 @@
     --color-ahover: #{$light-color-ahover};
     --color-bw: #{$light-color-bw};
     --color-title: #{$light-color-title};
+    --color-rbw: #{$light-color-rbw};
 }
 
 @mixin dark {
@@ -25,6 +26,7 @@
     --color-ahover: #{$dark-color-ahover};
     --color-bw: #{$dark-color-bw};
     --color-title: #{$dark-color-title};
+    --color-rbw: #{$dark-color-rbw};
 }
 
 //If auto we always use light theme

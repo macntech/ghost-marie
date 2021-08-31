@@ -13,13 +13,25 @@
 } 
 
   .post-title {
+    line-height: 2.2rem;
+    color: var(--color-title) !important;
+    text-align: left;
+    font-size: $font-size-4;
+    letter-spacing: 1px;
     margin-top: 0;
     margin-bottom: 10px;
   }
   
-  .post-meta a {
+
+  .post-meta {
+    font-size: 0.9rem;
+    font-style: normal; 
+    background-color: var(--color-logo);
+    color: var(--color-rbw);
     display: inline-block;
     font-style: normal;
+    width: 100%;
+    padding: 5px 30px 5px; //top, left/right, down
   }
   
   .post-meta a:after {
@@ -40,9 +52,11 @@
     background-color: var(--color-secondary);
     margin-top: 7px;
     padding: 5px 30px 5px;
+    color: var(--color-font);
+    font-size: 0.9rem;
   }
   
-  
+
   .post {
     margin-bottom: 40px;
     border: 0px solid #e2e2e2;

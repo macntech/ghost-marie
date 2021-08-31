@@ -6,7 +6,6 @@ h4,.h4,
 h5,.h5,
 h6,.h6 {
   font-family: $font-headlines;
-  color: var(--color-headline);
   font-weight: 400;
   line-height: 110%;
   text-align: left;
@@ -23,7 +22,7 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-
+  color: var(--color-headline);
   margin-top: 2rem;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -51,7 +50,6 @@ body {
   font-family: $font-standard;
   font-size: $font-size-2;
   color: var(--color-font);
-  line-height: 1.4rem;
 }
 
 
@@ -61,29 +59,6 @@ body {
   letter-spacing: 1px;
 }
 
-.post-title {
-  line-height: 2.2rem;
-  color: var(--color-title);
-  text-align: left;
-  font-size: $font-size-4;
-  letter-spacing: 1px;
-}
-
-.post-meta a{ 
-  font-size: 0.9rem; 
-  color: $white;
-}
-
-.post-meta { 
-  font-size: 0.9rem;
-  font-style: normal; 
-  color: $white;
-}
-
-.post-readmore {
-  color: var(--color-font);
-  font-size: 0.9rem;
-}
 
 .fontcontroller {
   font-size: 1rem;

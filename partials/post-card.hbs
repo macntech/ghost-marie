@@ -1,34 +1,14 @@
 <article class="grid-item">
 
          <div class="post-header"> 
-                 <!-- Controls the Icon on the top of the post title. 
-                 Add more Icons by adding or replacing lines. 
-                 The Icon must use fontawesome FREE 
-                  -->
-                 <div class="post-header-icon">
-                        {{#has tag="javascript"}}<i class="fab fa-js"></i>{{/has}}
-                        {{#has tag="html"}}<i class="fab fa-html5"></i>{{/has}}
-                        {{#has tag="sass"}}<i class="fab fa-sass"></i>{{/has}}
-                        {{#has tag="css"}}<i class="fab fa-css3-alt"></i></i>{{/has}}
-                        {{#has tag="nodejs"}}<i class="fab fa-node-js"></i>{{/has}}
-                        {{#has tag="python"}}<i class="fab fa-python"></i>{{/has}}
-                        {{#has tag="bash"}}<i class="fas fa-terminal"></i>{{/has}}
-                        {{#has tag="php"}}<i class="fab fa-php"></i>{{/has}}
-                        {{#has tag="microsoft"}}<i class="fab fa-microsoft"></i>{{/has}}
-                        {{#has tag="misc"}}<i class="fas fa-glasses"></i>{{/has}}
-                        {{#has tag="server"}}<i class="fas fa-server"></i>{{/has}}
-                        {{#has tag="network"}}<i class="fas fa-network-wired"></i>{{/has}}
-                        {{#has tag="ubuntu"}}<i class="fab fa-ubuntu"></i>{{/has}}
-                        {{#has tag="apple"}}<i class="fab fa-apple"></i>{{/has}}
-                        {{#has tag="design"}}<i class="fas fa-drafting-compass"></i>{{/has}}
-                </div>
-
+                 
                 <h1 class="post-title">
                         <a href="{{url}}">{{title}} </a>
                 </h1>
-                {{> "meta"}}
         </div>
-        
+
+        {{> "meta"}}
+      
 
         {{#if feature_image}}
          <div class="article-image-box">
