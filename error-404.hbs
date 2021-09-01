@@ -1,0 +1,54 @@
+{{!--
+This error template is used for all 404 errors, which might occur on your site.
+It's a good idea to keep this template as minimal as possible in terms of both file size and complexity.
+--}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> "head"}}
+</head>
+<body class="home line-numbers" data-theme="light">
+
+    <div id="main-content" data-barba="wrapper"> 
+
+        {{> "header"}}
+        
+        <div class="col-md-9 col-md-offset-3 side-collapse-container" data-barba="container">
+        <div class="tiles">
+
+        <article class="post" itemtype="http://schema.org/BlogPosting">
+            
+            <div class="post-header">               
+                <div class="post-title"><h1>Roooah...ups</h1></div>        
+            </div>
+            
+            <div class="post-meta">
+                <i class="fas fa-terminal"></i> Code {{code}}
+            </div>
+
+            <div class="post-content">             
+                <div class="post-content resizable justify">
+                    <p>Dino did eat everything on this page...but you can try another one.
+                        <br /><br /><br />
+                        <img src="{{asset "images/404-dino.png"}}" width="50%">
+                    </p>
+                </div>
+            </div>
+
+        </article>
+
+        </div>
+        </div>
+    <!-- Container End -->
+    </div>
+
+  {{> "footer"}}
+  
+    {{ghost_foot}}
+
+    <!-- JavaScript -->
+    {{> "scripts"}}   
+
+</body>
+</html>
