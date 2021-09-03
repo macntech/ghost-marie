@@ -1,55 +1,69 @@
-<!--
-*   MARIE Theme
-*   https://coding.observer
+{{!--
+*   MARIE Ghost Theme
+*   https://macn.tech
 *   Thank you for using this theme!
-*   Follow me @johannesgeisslinger
-*-->
+*   Follow me on Github @johannesgeisslinger
+*--}}
 
-<!-- Mobile Menu -->
+
+{{!-- Mobiles Menu  --}}
 <div class="mobile">
     <div class="container">
 
       <div class="menu-toggler"><i class="fas fa-bars"></i></div>
         <div class="logo">
-                        <!-- Check if Logo was uploaded -->
+                        {{!-- Logo check  --}}
                         {{#if @site.logo}}
                             <img src="{{@site.logo}}" alt="{{@site.title}}" width="200">
                         {{else}}
                             <span>{{@site.title}}</span>
                         {{/if}}
+
         </div>
+
+        <div class="description-mobil">                          
+                {{@site.description}}
+        </div>
+
     </div>
 </div>
 <div class="hide-menu"></div>
-<!-- End Mobile Menu -->
+{{!-- END Mobil Menu  --}}
 
 <div class="container">
     <div class="row">
         <div class="col-md-3">
             <div class="header">                
-                        <!-- Logo - Disable for mobile view-->
+                        {{!-- Disable for mobile view  --}}
                         <div class="logo logo-mobile">                                               
-                             <!-- Check if Logo was uploaded -->
+                             
                             {{#if @site.logo}}
                                 <img src="{{@site.logo}}" alt="{{@site.title}}" width="200">
                             {{else}}
                                 <span>{{@site.title}}</span>
                             {{/if}}
-                        </div>
-                        <!-- End Logo -->
-                  
-                        <!-- Navigation -->
-                        {{"navigation"}}
-                        <!-- End Navigation -->
 
-                        <!-- Socials -->
+                        </div>
+                     
+                        
+                        <div class="description description-screen">
+                            
+                            {{@site.description}}
+                            
+                        </div>
+                        
+                        {{!-- Navigation  --}}
+                        {{"navigation"}}
+                        
+
+                        {{!--  Social Links via Secondary Navigation --}}
                         <div class="socials">                      
                             {{navigation type="secondary"}} 
                         </div>                  
-                        <!-- End Socials -->
+                        
 
 
-                        <!-- Font Controller -->
+                        {{!-- Font Controller  --}}
                         <div class="fontcontroller">
                             <p>
                                 <a class="increase">A+</a>
@@ -58,12 +72,12 @@
                             </p>
                         </div>    
 
-                        <!-- Theme Mode Switcher-->
+                        {{!-- Theme Switch --}}
                         <button type="button" class="btn theme-switch">
                             <i id="switch" class="fas fa-adjust"></i>
                         </button>
 
-                        <!-- Kofi Button if enabled by Ghost site injection -->
+                        {{!-- KOFI Button  --}}
                         <div class="kofi" id="kofi"></div>
                         <script>
                             if(kofi) {
@@ -72,12 +86,12 @@
                             }                                           
                         </script>
 
-                        <!-- Enable Table of Content in case of Post Page-->
+                        {{!-- Table of Contents if page = post --}}
                         {{#post}}
                         <hr >
                         <div class="toc"></div>
                         {{/post}}
-                         <!-- End TOC -->
+                        {{!-- End TOC  --}}
 
             </div>
         </div>

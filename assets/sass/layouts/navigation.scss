@@ -96,18 +96,33 @@
     font-size: 5rem;
     color: var(--color-logo);
     text-transform: uppercase;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     line-height: 4.5rem;
   }
+
   .logo a {
     color: inherit;
   }
+
+
+  .description-mobil {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .description-screen {
+    padding-bottom: 20px;
+
+  }
+
   .socials {
     padding-top: 50px;
   }
+
   .socials a {
     margin-right: 8px;
-    font-size: 14px;
+    font-size: 1.5rem;
   }
   
   .fontcontroller {
@@ -120,6 +135,7 @@
 
 #switch {
   color: var(--color-bw);
+  padding-bottom: 20px;
 }
 
 .kofi {

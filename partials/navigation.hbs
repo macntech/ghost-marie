@@ -1,20 +1,15 @@
 {{#if isSecondary}}
     
-         <!-- Styling of Secondary Navigation = Social Links -->
+         {{!-- Styling for Social Links using Fontawesome  --}}
         {{#foreach navigation}}
-            <!-- Parse AND for last item on the list 
-            {{#if @last}}
-                and <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a>
-            {{else}}
-            <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a> 
-            {{/if}}  -->
+
             <a href="{{url absolute="true"}}"><i class="fab fa-{{label}}"></i></a> 
 
         {{/foreach}}
 
 {{else}}
    
-    <!-- Styling of Main Navigation -->
+    {{!--  Main Navigation --}}
     <div class="main-menu">
          <nav>                  
             <ul class="menu-list">

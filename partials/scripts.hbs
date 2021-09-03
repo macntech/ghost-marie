@@ -1,4 +1,11 @@
-<!-- jQuery Slim first, then Popper.js, then Bootstrap JS -->
+{{!--  
+*   This File contains all Javascript files used in the Theme
+*   The file is added before the closing body tag on every page
+*   Code injection variables are insert 
+ --}}
+
+
+{{!-- jQuery Slim first, then Popper.js, then Bootstrap JS --}}
     <script src="{{asset "js/masonry.pkgd.min.js"}}"></script>
     <script src="{{asset "js/jquery.min.js"}}"></script>
     <script src="{{asset "js/popper.min.js"}}"></script>
@@ -6,6 +13,9 @@
     <script src="{{asset "js/scripts.js"}}"></script>
     <script src="{{asset "js/prism.js"}}"></script>
 
+{{!-- Specific initialisation of JS files  --}}
+
+{{!-- TOC Bot  --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
     <script>
         tocbot.init({
@@ -16,10 +26,9 @@
         });
     </script>
 
-<!-- Cookie Banner Script and Configuration -->
+{{!-- Cookie Banner --}}
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-        
+    <script> 
         window.cookieconsent.initialise({
         "palette": {
             "popup": {
@@ -39,9 +48,9 @@
     </script>
 
 
-<!-- Matomo Analytics - if enabled you need to set the parameters in the code injection -->
-    
+{{!-- Matomo --}}
         <script type="text/javascript">
+        //Only if Matomo was enabled
         if(matomo){
             var _paq = window._paq || [];
             _paq.push(['trackPageView']);
@@ -57,7 +66,8 @@
         }
         </script>
 
-<!-- Set Config Variables based on Code Injection -->
+
+{{!-- Theme --}}
 <script>
     document.body.setAttribute('data-theme', theme);
 </script>

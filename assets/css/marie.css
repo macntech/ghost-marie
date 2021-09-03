@@ -11026,12 +11026,22 @@ i {
   font-size: 5rem;
   color: var(--color-logo);
   text-transform: uppercase;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   line-height: 4.5rem;
 }
 
 .logo a {
   color: inherit;
+}
+
+.description-mobil {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.description-screen {
+  padding-bottom: 20px;
 }
 
 .socials {
@@ -11040,7 +11050,7 @@ i {
 
 .socials a {
   margin-right: 8px;
-  font-size: 14px;
+  font-size: 1.5rem;
 }
 
 .fontcontroller {
@@ -11053,6 +11063,7 @@ i {
 
 #switch {
   color: var(--color-bw);
+  padding-bottom: 20px;
 }
 
 .kofi {
@@ -11349,7 +11360,7 @@ body {
 
 .grid-item {
   width: 49%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-right: 1%;
 }
 
@@ -11379,6 +11390,10 @@ body {
 /* ==================== MEDIA STYLES  ==================== */
 @media screen and (max-width: 991px) {
   .logo-mobile {
+    display: none;
+  }
+
+  .description-screen {
     display: none;
   }
 
