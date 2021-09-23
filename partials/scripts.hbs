@@ -12,6 +12,7 @@
     <script src="{{asset "js/bootstrap.min.js"}}"></script>
     <script src="{{asset "js/scripts.js"}}"></script>
     <script src="{{asset "js/prism.js"}}"></script>
+    <script src="{{asset "js/sticky.min.js"}}"></script>
 
 {{!-- Specific initialisation of JS files  --}}
 
@@ -69,5 +70,17 @@
 
 {{!-- Theme --}}
 <script>
-    document.body.setAttribute('data-theme', theme);
+    //Get the local theme 
+    const localTheme = localStorage.getItem("marie_data-theme");
+    
+    //Set local theme if already selected - for coming back users
+    if (localTheme !== null) {
+        document.body.setAttribute('data-theme', localTheme);        
+    }
+    else{
+        document.body.setAttribute('data-theme', theme);
+    }
+
+    //Initialize the sticky class
+    var sticky = new Sticky('.sticky');
 </script>

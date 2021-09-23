@@ -27,6 +27,8 @@
 
     </div>
 </div>
+
+
 <div class="hide-menu"></div>
 {{!-- END Mobil Menu  --}}
 
@@ -86,10 +88,10 @@
                             }                                           
                         </script>
 
-                        {{!-- Table of Contents if page = post --}}
+                        {{!-- Table of Contents if page = post // Including sticky.js to make TOC sticky if desktop mode--}}
                         {{#post}}
-                        <hr >
-                        <div class="toc"></div>
+                            <hr >
+                            <div class="toc sticky" data-margin-top="40" data-sticky-for="991"></div>
                         {{/post}}
                         {{!-- End TOC  --}}
 

@@ -11,7 +11,8 @@ MARIE includes many features build in the theme and ready for use. Some highligh
 - [x] Responsive Bootstrap Design
 - [x] Masonry Layout for front page
 - [x] Dark Mode
-- [x] TOC Bot
+- [x] TOC Bot 
+- [x] Sticky TOC in Posts
 - [x] Local Font Awesome Icons
 - [x] Utterranc.es and Cusdis Comments
 - [x] Code Highlighter and Clipboard with PRISM JS

@@ -2,36 +2,41 @@
 
 
 .post-header{
-    background-color: $grey-2;
-    padding: 20px 30px 10px;
+    background-color: var(--color-secondary);
+    border: 1px solid $grey-2;
+    padding: 5px 25px 5px;
   }
   
+//Not used now 
 .post-header-icon{
     font-size: $font-size-5;
-    color: var(--color-headline);
-    padding-bottom:10px;
+    padding-right: 10px;
+    border: 1px solid #000;
 } 
+
+.post-header-icon i{
+    vertical-align: bottom;
+
+}
 
   .post-title {
     line-height: 2.2rem;
-    color: var(--color-title) !important;
+    color: var(--color-bw) !important;
     text-align: left;
     font-size: $font-size-4;
     letter-spacing: 1px;
-    margin-top: 0;
-    margin-bottom: 10px;
   }
   
 
   .post-meta {
-    font-size: 0.9rem;
+    font-size: $font-size-1;
     font-style: normal; 
     background-color: var(--color-logo);
     color: var(--color-rbw);
     display: inline-block;
     font-style: normal;
     width: 100%;
-    padding: 5px 30px 5px; //top, left/right, down
+    padding: 5px 25px 5px; //top, left/right, down
   }
   
   .post-meta a:after {
@@ -44,14 +49,16 @@
   }
   
   .post-excerpt {
-    padding: 10px 30px 10px;
+    padding: 10px 25px 10px;
     background-color: var(--color-secondary);
+    border: 1px solid $grey-2;
+    min-height: 90px;
   }
   
   .post-readmore {
     background-color: var(--color-secondary);
     margin-top: 7px;
-    padding: 5px 30px 5px;
+    padding: 5px 25px 5px;
     color: var(--color-font);
     font-size: 0.9rem;
   }
@@ -69,6 +76,60 @@
     padding: 20px 30px 20px;
   }
   
+
+  .grid-sizer{ 
+    width: 70%;
+  }
+  
+  .grid-item { 
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right:5%;
+  }
+  
+  .article-image-box {
+    width: 100%;
+    height: 250px;
+    border-right: 1px solid $grey-2;
+    border-left: 1px solid $grey-2;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .article-image {
+    margin: 0 !important;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+
+ /****** Post ICONS ******/
+
+
+ .fa-js{ color:#FFD43B !important; }
+ .fa-sass{ color:#CF649A !important; }
+ .fa-html5{ color:#DD4B25 !important; }
+ .fa-node-js{ color:#6CA25D !important; }
+ .fa-python{ color:#3C7EA1 !important; }
+ .fa-terminal{ color:#000 !important; }
+ .fa-php{ color:#5D7CB2 !important; }
+ .fa-microsoft{ color:#F25022 !important; }
+ .fa-glasses{ color:#000 !important; }
+ .fa-network-wired{ color:#000 !important; }
+ .fa-ubuntu{ color:#F76009 !important; }
+ .fa-apple{ color:#000 !important; }
+ .fa-drafting-compass{ color:#00D8F9 !important; }
+
+
+
+
+
   
   /****** Single Page ******/
   
