@@ -4,7 +4,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 --}}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{@site.locale}}">
 <head>
   {{> "head"}}
 </head>
@@ -24,7 +24,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
             </div>
             
             <div class="post-meta">
-                <i class="fas fa-terminal"></i> Code {{code}}
+                <i class="fas fa-terminal"></i> Code {{error.statusCode}}
             </div>
 
             <div class="post-content">             

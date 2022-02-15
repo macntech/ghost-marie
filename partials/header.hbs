@@ -75,12 +75,18 @@
                         </div>    
 
                         {{!-- Theme Switch --}}
-                        <button type="button" class="btn theme-switch">
-                            <i id="switch" class="fas fa-adjust"></i>
-                        </button>
+                        <div class="mb-3">  
+                                <label class="switch">
+                                    <input id="theme-switch" type="checkbox">
+                                    <span class="slider">
+                                        <i class="fas fa-sun"></i>
+                                        <i class="fas fa-moon"></i>
+                                    </span>
+                                </label>
+                        </div> 
 
                         {{!-- KOFI Button  --}}
-                        <div class="kofi" id="kofi"></div>
+                        <div class="mb-3" id="kofi"></div>
                         <script>
                             if(kofi) {
                                 let content ='<a href="'+ kofiurl +'" target="_blank"><button type="button" class="btn btn-dark">Donate a <i class="fas fa-coffee"></i></button></a>';

@@ -1,25 +1,16 @@
-<article class="grid-item">
-
-
-        <div class="post-header"> 
-  
-                        <h1 class="post-title"><a href="{{url}}">{{title}} </a></h1>
-        </div>
-
-        {{> "meta"}}
-
-        {{#if feature_image}}
-         <div class="article-image-box">
-                <figure>
-                 <img class="article-image" src="{{img_url feature_image}}" alt="{{title}}"/>
-                </figure>
-        </div> 
-        {{/if}}
-
-        {{!-- Displays post excerpt. Sets to display max 170 chars if not set --}}
-        <div class="post-excerpt resizable justify">
-            <p>{{excerpt characters="200"}}</p>
-        </div>
-
-
-</article> 
+<div class="card mt-2">
+            <div class="card-body">
+                <div class="row mb-2">
+                    <div class="col-12 text-break underline"><h3 class="card-title">{{title}}</h3> </div>
+                </div>
+                <div class="row mb-2">
+                        {{> "meta"}}
+                </div>
+                <div class="card-body justify resizable">
+                       {{excerpt characters="200"}}
+                </div>
+                <div class="row">
+                    <div class="col-auto bold"><a class="card-link" href="{{url}}">Read here</a></div>
+                </div> 
+            </div>
+</div>

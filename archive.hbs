@@ -1,0 +1,30 @@
+{{!< default}}
+
+<div class="col-md-9 col-md-offset-3 side-collapse-container">
+
+<div class="card mt-4">
+            <div class="card-body">
+                <div class="row mb-2">
+                    <div class="col-10 text-break mt-2"><h1 class="card-title underline">Archive</h1></div>
+                </div>
+                <div class="row mb-1 p-3">
+                  {{#get "posts"}}
+                      {{t "Browse the complete archive of {total} posts." total=pagination.total}}
+                  {{/get}}
+                </div>
+                
+           </div>
+</div>
+
+<div class="card mt-3 p-3">
+  {{#get "posts"}}
+  {{#foreach posts}}
+    <div class="row">
+      <div class="col-2"><time datetime="{{ time .Date }}" itemprop="datePublished">{{date published_at format="MMM DD - YYYY"}}</time></div>
+      <div class="col-auto"><a href="{{url}}" class="link">{{title}}</a></div>
+    </div>    
+  {{/foreach}}
+  {{/get}}
+</div>
+
+</div>

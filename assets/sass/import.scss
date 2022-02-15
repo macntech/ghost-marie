@@ -15,18 +15,18 @@
 *********************************************************************
 */
 
-@import "./var.scss";
-
 //Bootstrap
 @import "./bootstrap/bootstrap.scss";
 
 
 /*========================= GENERAL STYLES ====================================== */
+@import "./layouts/fonts.scss";
+@import "./layouts/theme.scss";
+
 @import "./global.scss";
 @import "./layouts/posts.scss";
 @import "./layouts/navigation.scss";
 
-@import "./layouts/theme.scss";
 @import "./layouts/style.scss";
 
 @import "./custom.scss";

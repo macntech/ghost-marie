@@ -33,10 +33,13 @@
     padding-top: 3px;
     padding-bottom: 3px;
     display: block;
-}
+    color: var(--color-font);
+    underline: none;
+    
+  }
 
 .main-menu .active a {
-    color: var(--color-ahover);
+    color: var(--color-font);
 }
   
 .main-menu a:hover:before{
@@ -93,7 +96,7 @@
 
   
   .logo {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--color-logo);
     text-transform: uppercase;
     padding-bottom: 30px;
@@ -122,7 +125,8 @@
 
   .socials a {
     margin-right: 8px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--color-font);
   }
   
   .fontcontroller {
@@ -131,16 +135,76 @@
   
   .fontcontroller a{
     cursor: pointer;
+    color: var(--color-font);
   }
 
-#switch {
-  color: var(--color-bw);
-  padding-bottom: 20px;
+//============================ START THEME SWITCHER ===================== //
+
+:root {
+  --toggle-light: #96959B;
+  --toggle-dark: #24883F;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
 }
 
-.kofi {
- margin-bottom: 25px;
+/* Hide default html checkbox */
+.switch input {
+  opacity: 0;
 }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: space-between;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--toggle-dark);
+  transition: 0.4s;
+  border-radius: 35px;
+}
+
+.slider i{
+  padding-top: 7.5px;
+}
+
+
+.slider:before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 31px;
+  bottom: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.4s all ease;
+}
+
+
+input:checked + .slider {
+  background: var(--toggle-light);
+}
+
+input:checked + .slider:before {
+  transform: translateX(-28px);
+}
+
+input:checked + .round::before {
+  background-color: #ffffff;
+}
+
+//============================ END THEME SWITCHER ===================== //
+
 
 .navigation-wrap {
     margin-top: 50px;
@@ -177,6 +241,6 @@
 /******** Table of Content Styles ***********/
 
 .toc { 
-  font-family: $font-roboto-regular;
+  font-family: $font-standard;
   line-height: 2rem;
 }

@@ -9,17 +9,17 @@ A fully resonsive bootstrap based Ghost Theme for personal blogs. The theme has 
 MARIE includes many features build in the theme and ready for use. Some highlights are the barrier-free reading with text-size adjustments, build-in syntax highlighter with Prism.JS including all languages, line numbers and clipboard function as well as newsletter support and build-in utterances comments. 
 
 - [x] Responsive Bootstrap Design
-- [x] Masonry Layout for front page
 - [x] Dark Mode
-- [x] TOC Bot 
 - [x] Sticky TOC in Posts
 - [x] Local Font Awesome Icons
-- [x] Utterranc.es and Cusdis Comments
 - [x] Code Highlighter and Clipboard with PRISM JS
 - [x] Ko-Fi Implementation
 - [x] Barrier-free reading by adjusting the text size
 - [x] Matomo and Google Analytics Support
 - [x] Easy to customize SASS
+
+## Demo
+
 
 
 ## Table of Contents
@@ -71,7 +71,6 @@ The theme includes a basic pagination on the index and archive pages. You can se
 
 #### Social Media Links
 You can enable social media links on the footer of your page. The links are based on the secondary navigation of your Ghost site. Each secondary navigation element will be transferred to a social link including icon. The label of the navigation item must match the fontawesome name. Example:
-
 
 
 

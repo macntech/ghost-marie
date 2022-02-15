@@ -9,12 +9,10 @@
                         <i class="fas fa-chevron-left"></i>
                     </a>
         </li>
-        {{#foreach page}}
                 <li>
-                    <a class="page-numbers" href="{{page_url}}">{{page}}</a>
+                    <span class="page-number">Page {{page}} of {{pages}}</span>
                 </li>
-        {{/foreach}}
-
+        
         <li>
                     {{#if next}}
                         <a class="next page-numbers" href="{{page_url next}}">

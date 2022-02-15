@@ -1,32 +1,65 @@
 
+/*COLOR DEFINITIONS*/
+
+
+$light-color-bg: #F5F2F0;
+$light-color-card: #FFFFFF;
+
+$light-color-font: #323232;
+$light-color-mobilemenu: #F5F2F0;
+
+$light-color-headline: #000000;
+$light-color-title: #ffffff;
+$light-color-logo: #000000;
+$light-color-bw: #000000;
+$light-color-rbw: #ffffff;
+
+$light-color-link: #5E9CC8;
+
+
+$dark-color-bg: rgba(33, 33, 33, 1.0);
+$dark-color-card: #626463;
+
+$dark-color-font: #F5F2F0;
+$dark-color-mobilemenu: #F5F2F0;
+
+
+$dark-color-headline: #000000;
+$dark-color-title: #000000;
+$dark-color-logo: #ffffff;
+$dark-color-bw: #ffffff;
+$dark-color-rbw: #000000;
+
+$dark-color-link:#5E9CC8;
+
+
+
 @mixin light {
     --color-mode: "light";
     --color-bg: #{$light-color-bg};
-    --color-primary: #{$light-color-primary};
-    --color-secondary: #{$light-color-secondary};
+    --color-card: #{$light-color-card};
     --color-font: #{$light-color-font};
+    --color-rfont: #{$light-color-mobilemenu};
     --color-headline: #{$light-color-headline};
-    --color-highlight: #{$light-color-highlight};
     --color-logo: #{$light-color-logo};
-    --color-ahover: #{$light-color-ahover};
     --color-bw: #{$light-color-bw};
     --color-title: #{$light-color-title};
     --color-rbw: #{$light-color-rbw};
+    --color-link: #{$light-color-link};
 }
 
 @mixin dark {
     --color-mode: "dark";
     --color-bg: #{$dark-color-bg};
-    --color-primary: #{$dark-color-primary};
-    --color-secondary: #{$dark-color-secondary};
+    --color-card: #{$dark-color-card};
     --color-font: #{$dark-color-font};
+    --color-rfont: #{$dark-color-mobilemenu};
     --color-headline: #{$dark-color-headline};
-    --color-highlight: #{$dark-color-highlight};
     --color-logo: #{$dark-color-logo};
-    --color-ahover: #{$dark-color-ahover};
     --color-bw: #{$dark-color-bw};
     --color-title: #{$dark-color-title};
     --color-rbw: #{$dark-color-rbw};
+    --color-link: #{$dark-color-link};
 }
 
 //If auto we always use light theme

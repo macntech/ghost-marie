@@ -1,12 +1,9 @@
 /* ==================== POST STYLES  ==================== */
 
+.card {
+  background: var(--color-card);
+}
 
-.post-header{
-    background-color: var(--color-secondary);
-    border: 1px solid $grey-2;
-    padding: 5px 25px 5px;
-  }
-  
 //Not used now 
 .post-header-icon{
     font-size: $font-size-5;
@@ -19,64 +16,16 @@
 
 }
 
-  .post-title {
-    line-height: 2.2rem;
-    color: var(--color-bw) !important;
-    text-align: left;
-    font-size: $font-size-4;
-    letter-spacing: 1px;
-  }
-  
-
-  .post-meta {
-    font-size: $font-size-1;
-    font-style: normal; 
-    background-color: var(--color-logo);
-    color: var(--color-rbw);
-    display: inline-block;
-    font-style: normal;
-    width: 100%;
-    padding: 5px 25px 5px; //top, left/right, down
-  }
-  
-  .post-meta a:after {
+.post-meta a:after {
     content: '|';
     margin-left: 5px;
     margin-right: 5px;
-  }
-  .post-meta a:last-child:after {
+}
+.post-meta a:last-child:after {
     content: normal;
-  }
+}
   
-  .post-excerpt {
-    padding: 10px 25px 10px;
-    background-color: var(--color-secondary);
-    border: 1px solid $grey-2;
-    min-height: 90px;
-  }
-  
-  .post-readmore {
-    background-color: var(--color-secondary);
-    margin-top: 7px;
-    padding: 5px 25px 5px;
-    color: var(--color-font);
-    font-size: 0.9rem;
-  }
-  
-
-  .post {
-    margin-bottom: 40px;
-    border: 0px solid #e2e2e2;
-  }
-  .post:last-child {
-    margin-bottom: 0;
-  }
-  .post .post-content {
-    background-color: var(--color-secondary);
-    padding: 20px 30px 20px;
-  }
-  
-
+ 
   .grid-sizer{ 
     width: 70%;
   }
@@ -90,15 +39,12 @@
   .article-image-box {
     width: 100%;
     height: 250px;
-    border-right: 1px solid $grey-2;
-    border-left: 1px solid $grey-2;
     position: relative;
     display: inline-block;
     overflow: hidden;
   }
   
   .article-image {
-    margin: 0 !important;
     display: block;
     position: absolute;
     top: 50%;
@@ -125,7 +71,6 @@
  .fa-ubuntu{ color:#F76009 !important; }
  .fa-apple{ color:#000 !important; }
  .fa-drafting-compass{ color:#00D8F9 !important; }
-
 
 
 
@@ -199,98 +144,3 @@
     }
 
   } 
-
-
-
-  
-  /** TOC Styling End **/
-  
-  .post-content p:last-child {
-    margin-bottom: 0;
-  }
-  .post-content ul,
-  .post-content ol {
-    font-size: 13px;
-    font-style: normal;
-    padding-left: 20px;
-  }
-  .post-content ul li,
-  .post-content ol li {
-    margin-bottom: 5px;
-  }
-  .post-content ul > li:last-child,
-  .post-content ol > li:last-child {
-    margin-bottom: 0;
-  }
-  .post-footer {
-    margin-top: 30px;
-  }
-  
-  
-  .post-category strong {
-    margin-right: 5px;
-  }
-  .post-category a {
-    color: $color-highlight;
-  }
-  .post-category a:after {
-    content: ',';
-    margin-right: 5px;
-  }
-  .post-category a:last-child:after {
-    content: normal;
-  }
-  
-  
-  .post-tags a {
-    opacity: 1;
-    display: inline-block;
-    color: $color-highlight;
-  }
-  .post-tags a:before {
-    margin-left: 5px;
-    content: '#';
-  }
-  .post-tags a:first-child:before {
-    margin-left: 0;
-  }
-  .post-tags a:hover {
-    opacity: 0.8;
-  }
-  
-  .post-share {
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 30px;
-  }
-  .post-share a {
-    color: #color-highlight;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  
-  
-  .post-comments {
-    margin-top: 30px;
-    background-color: var(--color-secondary);
-    padding: 30px 30px 10px;
-    
-  }
-  
-  .post-files {
-    background-color: #C7C7C7;
-    color:#000;
-    margin-top: 20px;
-    padding: 10px;
-    min-height:50px;
-  }
-  
-  .post-files h2{padding-bottom: 15px;}
-  
-  .post-files a{
-    color:#000;
-  }
-  
-  .post-files ul{
-    list-style: outside none none;
-  }

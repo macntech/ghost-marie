@@ -1,12 +1,19 @@
 {
   "name": "marie",
-  "description": "Marie is a clean blog theme for Ghost built by Johannes Geisslinger",
+  "description": "Marie is a clean responsive blog theme for Ghost",
   "version": "1.0.1",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v3"
   },
   "license": "gpl-3.0",
+  "screenshots": {
+    "desktop": "assets/screenshots/desktop.jpg",
+    "mobile": "assets/screenshots/mobile.jpg"
+  },
+  "scripts":{
+    "test": "gscan ."
+  },
   "author": {
     "name": "Johannes Geisslinger",
     "email": "jo@macn.tech",
@@ -16,18 +23,26 @@
     "type": "theme",
     "categories": [
       "Minimal",
-      "Magazine",
+      "Responsive",
       "Blog"
     ]
   },
   "keywords": [
     "marie",
-    "ghost",
+    "ghost-theme",
     "blog",
     "bootstrap",
     "responsive",
-    "mansory"
+    "theme",
+    "dark mode"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macntech/ghost-marie.git"
+  },
+  "devDependencies": {
+    "gscan": "^4.22.0"
+  },
   "config": {
     "posts_per_page": 4,
     "image_sizes": {}

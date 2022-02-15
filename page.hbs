@@ -1,45 +1,40 @@
 {{!< default}}
 {{#post}}
 
-<div class="col-md-9 col-md-offset-3 side-collapse-container" data-barba="container">
-    <div class="tiles">
+{{!-- Bootstrap responsive Container and preparation for barba --}}
+<div class="col-md-9 col-md-offset-3 side-collapse-container">
 
         <article class="post" itemtype="http://schema.org/BlogPosting">
             
-            <div class="post-header">
-                
-                <div class="post-title"><h1>{{title}}</h1></div>
-                            
+            {{!--  Post Title --}}
+            <div class="card mb-2">           
+                <div class="card-title p-3"><h1>{{title}}</h1></div>                       
             </div>
-            
-            <div class="post-meta">
-                <i class="fas fa-terminal"></i>
-            </div>
+        
 
-            <div class="post-content">
-                
+            {{!-- Main Post Content --}}
+            <div class="card">
+                {{!-- Post Image --}}
                 {{#if feature_image}}
-                <div class="post-image-container">
+                <div class="card-img">
                     <figure>
                         <img class="post-image" src="{{img_url feature_image}}" alt="{{title}}" />
                     </figure>
                 </div>
                 {{/if}}
                 
-                <!-- Main Post Content -->
-                <div class="post-content resizable justify">
-                    <p>
-                        {{content}} 
-                    </p>
-         
+                {{!-- Main Post Content --}}
+                <div class="card-body post-content resizable justify articleBody">
+                    <p>{{content}}</p>
                 </div>
-                <!-- Main Page Content End -->   
+
+
             </div>
 
         </article>
-        <!-- End Single Page-->
+        <!-- End Single Post-->
 
-    </div>
+
 </div>
 <!-- Container End -->
 </div>

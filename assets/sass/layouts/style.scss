@@ -1,112 +1,30 @@
-/* ======================= TYPOGRAPHIE  ======================== */
-h1,.h1,
-h2,.h2,
-h3,.h3,
-h4,.h4,
-h5,.h5,
-h6,.h6 {
-  font-family: $font-headlines;
-  font-weight: 400;
-  line-height: 110%;
-  text-align: left;
-}
-
-h1,.h1,
- {
-  margin-top: 0.9rem;
-  margin-bottom: 10px;
-}
-
-h2,.h2,
-h3,.h3,
-h4,.h4,
-h5,.h5,
-h6,.h6 {
-  color: var(--color-headline);
-  margin-top: 2rem;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid;
-
-}
-
-
-h1 > a,.h1 > a,
-h2 > a,.h2 > a,
-h3 > a,.h3 > a,
-h4 > a,.h4 > a,
-h5 > a,.h5 > a,
-h6 > a,.h6 > a {
-  color: inherit;
-}
-h1,.h1 { font-size: 3rem; }
-h2,.h2 { font-size: 2rem; }
-h3,.h3 { font-size: 1.6rem; }
-h4,.h4 { font-size: 1.4rem; }
-h5,.h5 { font-size: 1.3rem; }
-h6,.h6 { font-size: 1.1rem; }
-
-body {
-  font-family: $font-standard;
-  font-size: $font-size-2;
-  color: var(--color-font);
-}
-
-ul {
-  font-family: $font-standard;
-}
-
-
-.title {
-  line-height: 1.5rem;
-  color: var(--color-headline);
-  letter-spacing: 1px;
-}
-
-
-.fontcontroller {
-  font-size: 1rem;
-  color: var(--color-font);
-}
-
-a {
-  color: #ababab;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-a:hover {
-  color: var(--color-ahover) !important;
-}
 
 p {
-  margin-top: 0;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.post-content p, .post-excerpt p{
-  font-family: $font-roboto-regular;
-}
-
-
-.justify {
-  text-align: justify;
-}
 
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
-  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 iframe {
   border: 0;
   max-width: 100%;
 }
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+
 
 /*============================== INDEX STYLES ======================================== */
 body {
@@ -127,13 +45,16 @@ body {
   text-align: right;
   z-index: 9;
 }
+
 .header-text {
   margin-bottom: 50px;
 }
+
 .header-text blockquote {
   font-size: 16px;
   padding-left: 50px;
 }
+
 .header-text blockquote:before {
   font-size: 30px;
 }
@@ -166,7 +87,7 @@ body {
   padding-right: 5px;
 }
 .pagination-wrap ul li .current {
-  color: $color-highlight;
+  color: var(--color-link);
 }
 
 
@@ -178,7 +99,7 @@ body {
 
 
 .is-active-link::before {
-  background-color: var(--color-highlight);
+  background-color: var(--color-link);
 }
 
 
@@ -236,6 +157,11 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
   }
+
+  .main-menu .menu-list > li > a {
+    color: #F5F2F0 !important;
+  }
+
   .main-menu a:hover,
   .menu-left .main-menu a:hover {
     color: #ffffff !important;
@@ -247,11 +173,16 @@ body {
    
   .socials a {
     margin-right: 10px;
-    
+  
   }
-  .socials {
-    color: #ffffff;
+  .socials a {
+    color: #ffffff !important;
   }
+
+  .fontcontroller a {
+    color: #ffffff !important;
+  }
+
   .hide-menu.active {
     visibility: visible;
     opacity: 1;
