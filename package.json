@@ -8,8 +8,9 @@
   },
   "license": "gpl-3.0",
   "screenshots": {
-    "desktop": "assets/screenshots/desktop.jpg",
-    "mobile": "assets/screenshots/mobile.jpg"
+    "desktop": "assets/screenshots/desktop.png",
+    "dark": "assets/screenshots/desktop-dark.png",
+    "mobile": "assets/screenshots/mobile.png"
   },
   "scripts":{
     "test": "gscan ."
@@ -44,7 +45,7 @@
     "gscan": "^4.22.0"
   },
   "config": {
-    "posts_per_page": 4,
+    "posts_per_page": 3,
     "image_sizes": {}
   }
 }

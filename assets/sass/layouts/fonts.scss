@@ -22,10 +22,17 @@
     url("../fonts/webfonts/fa-brands-400.ttf") format('truetype');
 }
 
+@font-face{
+  font-family: 'FontAwesome Solid';
+  src: 
+    url("../fonts/webfonts/fa-solid-900.ttf") format('truetype');
+}
+
 
 $font-standard: 'Noto Regular';
 $font-headlines: 'JetBrains Mono';
 $font-fontawesome: 'FontAwesome';
+$font-fontawesome-solid: 'FontAwesome Solid';
 
 $font-size-0: 0.5rem; 
 $font-size-1: 0.75rem; 

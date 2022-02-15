@@ -21,10 +21,18 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
 .post-meta a:last-child:after {
     content: normal;
 }
   
+
+.post-link a:after{
+  font-family: $font-fontawesome-solid;
+  content:"  \f35d";
+  font-size: 0.8rem;
+}
+
  
   .grid-sizer{ 
     width: 70%;

@@ -1,4 +1,6 @@
 # MARIE - A Ghost Theme
+[![Build Status](https://app.travis-ci.com/macntech/ghost-marie.svg?branch=master)](https://app.travis-ci.com/macntech/ghost-marie) ![GitHub Release Date](https://img.shields.io/github/release-date/macntech/ghost-marie?label=Release)
+
 
 A fully resonsive bootstrap based Ghost Theme for personal blogs. The theme has a clean layout and is easy to use with a lot of build in features.
 
@@ -8,9 +10,9 @@ A fully resonsive bootstrap based Ghost Theme for personal blogs. The theme has 
 
 MARIE includes many features build in the theme and ready for use. Some highlights are the barrier-free reading with text-size adjustments, build-in syntax highlighter with Prism.JS including all languages, line numbers and clipboard function as well as newsletter support and build-in utterances comments. 
 
-- [x] Responsive Bootstrap Design
+- [x] Responsive Bootstrap v5 Design
 - [x] Dark Mode
-- [x] Sticky TOC in Posts
+- [x] Sticky Table of Content on Pages
 - [x] Local Font Awesome Icons
 - [x] Code Highlighter and Clipboard with PRISM JS
 - [x] Ko-Fi Implementation
@@ -18,9 +20,9 @@ MARIE includes many features build in the theme and ready for use. Some highligh
 - [x] Matomo and Google Analytics Support
 - [x] Easy to customize SASS
 
-## Demo
+## Screenshots
 
-
+<img src="https://f003.backblazeb2.com/file/s3-public-netorg-io/github/ghost-marie/marie.png" width="100%">
 
 ## Table of Contents
 
@@ -32,7 +34,7 @@ MARIE includes many features build in the theme and ready for use. Some highligh
 
 
 ## :floppy_disk: Installation
-Download the latest release on Github, download the zip, extract the folder, and paste it into your theme folder (content/themes) of your Ghost installation or upload the file via the Ghost theme uploader.
+Download the latest release on Github, download the zip, extract the folder, and paste it into your theme folder (content/themes) of your Ghost installation or upload the zip file via the Ghost theme uploader (easy option).
 
 You can also enter the content/themes folder on your server and enter the following command:
 
@@ -65,14 +67,19 @@ The theme includes a basic pagination on the index and archive pages. You can se
 
 ```json
 "config": {
-    "posts_per_page": 4
+    "posts_per_page": 3
   }
 ```
 
 #### Social Media Links
-You can enable social media links on the footer of your page. The links are based on the secondary navigation of your Ghost site. Each secondary navigation element will be transferred to a social link including icon. The label of the navigation item must match the fontawesome name. Example:
+You can enable social media links below the main navigation. The links are based on the secondary navigation of your Ghost site. Each secondary navigation element will be transferred to a social link including icon. The label of the navigation item must match the FontAwesome name. Examples:
 
-
+```yaml
+Github: github
+Twitter: twitter
+Facebook: facebook
+```
+More to check out here https://fontawesome.com/v5/search?m=free&s=brands
 
 
 #### :triangular_ruler: Custom CSS / SASS
@@ -95,7 +102,6 @@ If you use cookies in your theme (like with Matomo, theme switcher etc.) you may
 var cookies = true;
 ```
 
-
 You can edit the details of the banner by editing the script file: 
 
 :arrow_right: ``` partials/scripts.hbs ```
@@ -114,9 +120,11 @@ var kofiurl = 'https://ko-fi.com/johannes';
 
 
 #### :crystal_ball: Comments
-You can activate a comment section based on Utterances or Cusdis. For Utterances follow their how-to (https://utteranc.es) to setup your GitHub issues for collecting your comments. For Cusdis (enabled by default) you need to host your own comment system and connect with your details. Afterwards configure the plugin under 
+You can activate a comment section based on Utterances or Cusdis. For Utterances follow their how-to (https://utteranc.es) to setup your GitHub issues for collecting your comments. For Cusdis you need to host your own comment system and connect with your details. Afterwards configure the plugin under 
 
 :arrow_right: ``` partials/comments.hbs ```
+
+Afterwards you need to enable comment section in the :arrow_right: ``` /post.hbs ```
 
 
 #### :bar_chart: Matomo Tracking
@@ -139,7 +147,7 @@ Finally some credits for the good work on the resources used in this theme:
 
 ## Sponsor
 
-If you like the theme I would be very happy to reveive your feedback or a coffee to stay awake and continue coding nice things
+If you like the theme I would be very happy to reveive your feedback here in Github or a coffee to stay awake and continue coding nice things
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I12FSW2)
 

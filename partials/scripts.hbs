@@ -4,7 +4,6 @@
 *   Code injection variables are insert 
  --}}
 
-
 {{!-- jQuery Slim first, then Popper.js, then Bootstrap JS --}}
     <script src="{{asset "js/jquery.min.js"}}"></script>
     <script src="{{asset "js/popper.min.js"}}"></script>
@@ -42,8 +41,8 @@
         "theme": "edgeless",
         "position": "bottom-left",
         "content": {
-            "message": "Diese Seite benutzt Cookies um diverse Funktionen sicherzustellen.",
-            "dismiss": "Akzeptieren" }
+            "message": "We use cookies. You cannot eat it but please accept it.",
+            "dismiss": "Accept" }
         });
     </script>
 
@@ -67,7 +66,7 @@
         </script>
 
 
-{{!-- Theme --}}
+{{!-- Theme Selector--}}
 <script>
     //Get the local theme 
     const localTheme = localStorage.getItem("marie_data-theme");
