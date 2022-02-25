@@ -51,7 +51,7 @@ h5,.h5,
 h6,.h6 {
   font-family: $font-headlines;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 180%; //Because underline issue
   text-align: left;
 }
 

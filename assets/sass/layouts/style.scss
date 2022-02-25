@@ -107,11 +107,6 @@ body {
 
 @media screen and (max-width: 991px) {
 
-  .logo-mobile
-  {
-    display:none;
-  }
-
   .description-screen {
     display: none;
 
@@ -119,8 +114,18 @@ body {
 
   .mobile {
     display: block;
+    z-index: 1;
+}
 
+  .mobile-header {
+    display: block;
+    background: var(--color-bg);
+    z-index: 200 !important; // to support sticky
+    padding-top: 10px;
+    height: 50px;
+    border-bottom: 1px solid var(--color-bw);
   }
+
 
   .header,
   .menu-left .header {
@@ -200,7 +205,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -211,12 +216,9 @@ body {
 @media screen and (max-width: 480px) {
    
   .mobile {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
-  .mobile .logo {
-    font-size: 30px;
-    padding-left: 20px;
-  }
+
   .navigation-wrap {
     margin-top: 30px;
   }

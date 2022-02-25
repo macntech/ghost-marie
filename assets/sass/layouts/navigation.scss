@@ -1,5 +1,5 @@
 /*
-*  MARIE Navigation Styles
+*  MARIE Navigation Styles and Menu
 */
 
 .menu-left .header {
@@ -81,7 +81,7 @@
     font-size:1.5rem;
     width: 22px;
     height: 1px;
-    background-color: #fff;
+    background-color: var(--color-bg);
     display: inline-block;
     position: fixed;
     z-index: 999;
